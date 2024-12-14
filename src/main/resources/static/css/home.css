@@ -1,97 +1,52 @@
 @charset "UTF-8";
-/* General styling */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f9f9f9;
-    color: #333;
-}
+/* home.css */
 
-/* Container styling */
-.container {
-    width: 80%;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #fff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-}
+  .hero-section {
+            background: url('https://src/main/resources/static/images/img1.jpg') no-repeat center center/cover;
+            height: 100vh; /* Full screen height */
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+        }
 
-/* Header styling */
-.header {
-    text-align: center;
-    padding: 20px;
-    border-bottom: 1px solid #ddd;
-}
+        .overlay {
+            background: rgba(0, 0, 0, 0.6); /* Semi-transparent overlay */
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
 
-.header h1 {
-    font-size: 2em;
-    margin: 0;
-    color: #2c3e50;
-}
+        .content {
+            position: relative;
+            z-index: 1;
+        }
 
-.header .tagline {
-    font-size: 1.2em;
-    color: #7f8c8d;
-}
+        /* Button Styling */
+        .btn-primary {
+            background-color: #28a745;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1rem;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
 
-/* Main content styling */
-.main-content {
-    padding: 20px;
-    line-height: 1.6;
-}
+        .btn-primary:hover {
+            background-color: #218838;
+        }
 
-.main-content h2 {
-    font-size: 1.8em;
-    color: #34495e;
-}
+        /* List Styling */
+        .features-list {
+            list-style-type: none;
+            padding: 0;
+        }
 
-.main-content p {
-    font-size: 1.1em;
-    color: #555;
-}
-
-/* Features section styling */
-.features {
-    margin-top: 20px;
-    padding: 20px;
-    background-color: #ecf0f1;
-    border-radius: 8px;
-}
-
-.features h3 {
-    font-size: 1.5em;
-    color: #16a085;
-}
-
-.features ul {
-    list-style-type: square;
-    padding-left: 20px;
-}
-
-.features ul li {
-    margin: 10px 0;
-    font-size: 1em;
-    color: #34495e;
-}
-
-/* Responsive design */
-@media (max-width: 768px) {
-    .container {
-        width: 95%;
-        padding: 10px;
-    }
-
-    .header h1 {
-        font-size: 1.5em;
-    }
-
-    .main-content h2 {
-        font-size: 1.5em;
-    }
-
-    .features h3 {
-        font-size: 1.2em;
-    }
-}
+        .features-list li {
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+        }

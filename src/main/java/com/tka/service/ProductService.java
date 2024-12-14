@@ -25,5 +25,17 @@ public class ProductService {
 		return list;
 	}
 
+	public Product getProductById(int pid) {
+		return dao.getProductById(pid);
+	}
+
+	public String updateProduct(Product product) {
+		return dao.updateProduct(product);	
+	}
+
+	public String deleteProduct(int pid) {
+		return dao.deleteProduct(pid);
+	}
+
 
 }

@@ -9,6 +9,7 @@
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <link rel="stylesheet" href="css/addproduct.css">
+<link rel="stylesheet" href="css/base.css">
 </head>
 <body>
 <jsp:include page="nav.jsp"></jsp:include>
@@ -43,7 +44,7 @@
                                             <input type="text" class="form-control"  name="category" placeholder="Category" value="" />
                                         </div>
                                         
-                                        <button type="submit">save product</button>
+                                        <button type="submit" class="btn btn-success">save product</button>
                                         
                                     </div>
                                    
@@ -56,5 +57,7 @@
                 </div>
 
             </div>
+            
+             <jsp:include page="footer.jsp"></jsp:include>
 </body>
 </html>

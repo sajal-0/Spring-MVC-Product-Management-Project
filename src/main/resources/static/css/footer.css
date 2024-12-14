@@ -1,0 +1,32 @@
+/* Footer Fix */
+footer {
+    background-color: #333; /* Keep your footer color */
+    color: #fff;
+    text-align: center;
+    padding: 15px 10px;
+    width: 100%; /* Ensures full-width */
+    box-sizing: border-box; /* Includes padding and borders */
+    position: relative;
+    overflow: hidden;
+}
+
+footer a {
+    color: #aaa;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #fff;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+   box-sizing: border-box;
+}
+
+footer {
+    margin: 0; /* Remove any footer margin */
+    padding: 15px 0; /* Adjust padding if needed */
+}

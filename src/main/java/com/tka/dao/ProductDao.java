@@ -58,4 +58,47 @@ public class ProductDao {
 		}	
 	}
 
+	public Product getProductById(int pid) {
+		try (Session session = factory.openSession()) {
+			
+			Product product = session.get(Product.class, pid);
+            return product;
+        } catch (Exception e) {
+            e.printStackTrace();
+            return null;
+        }
+	}
+
+	public String updateProduct(Product product) {
+		 try (Session session = factory.openSession()) {
+			 
+	            Transaction tr = session.beginTransaction();	
+	            session.update(product);
+	            tr.commit();
+	            return "Product updated successfully!";
+	            
+	        } catch (Exception e) {
+	            e.printStackTrace();
+	            return "Failed to update product.";
+	        }
+	}
+
+	public String deleteProduct(int pid) {
+		 try (Session session = factory.openSession()) {
+			 
+	          Transaction tr = session.beginTransaction();
+	          Product product = session.get(Product.class, pid);
+	          
+	          session.delete(product);
+	          tr.commit();
+	          return "Product deleted successfully!";
+	            
+	            
+	            
+		 }catch (Exception e) {
+	            e.printStackTrace();
+	            return "product not deleted.";
+	        }
+	}
+
 }
