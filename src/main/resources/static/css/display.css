@@ -1,0 +1,43 @@
+@charset "UTF-8";
+/* Custom styling for the table */
+
+/* Heading */
+h1 {
+    color: #333;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+/* Table Styling */
+table {
+    background-color: white;
+    border-collapse: collapse;
+}
+
+thead.thead-light {
+    background-color: #72A8D9; /* Blue background */
+    color: white; /* White text */
+}
+
+.table th, .table td {
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid #ddd; /* Light border */
+}
+
+.table tbody tr:nth-child(odd) {
+    background-color: #F2F7FB; /* Alternate rows in light blue */
+}
+
+.table tbody tr:hover {
+    background-color: #E6EEF5; /* Row hover background */
+}
+
+/* Buttons Styling */
+.btn {
+    margin: 2px; /* Adds spacing between buttons */
+}
+
+.container {
+    margin-top: 30px; /* Space above the table */
+}

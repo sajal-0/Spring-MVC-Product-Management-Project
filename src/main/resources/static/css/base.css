@@ -14,7 +14,7 @@ h1, h2, h3 {
 }
 
 .navbar {
-            border-bottom: 1px solid #eee; /* Light gray border */
+            border-bottom: 1px solid rgb(0, 255, 255); /* Light gray border */
         }
         .navbar-brand {
             font-size: 1.5rem;
@@ -40,11 +40,7 @@ h1, h2, h3 {
     border-color: #007bff;
 }
 
-.container {
-    max-width: 1700px;
-    margin: auto;
-    padding: 1px;
-}
+
 
 /* Common table styles */
 table {

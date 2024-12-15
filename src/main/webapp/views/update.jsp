@@ -36,6 +36,8 @@
             </div>
             <button type="submit" class="btn btn-primary">Update Product</button>
             <a href="display-product" class="btn btn-secondary">Cancel</a>
+            
+            
         </form>
     </div>
 </body>

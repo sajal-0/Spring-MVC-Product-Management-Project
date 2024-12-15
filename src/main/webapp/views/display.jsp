@@ -17,7 +17,7 @@
 <jsp:include page="nav.jsp"></jsp:include><br><br>
 <h1 align="center">All Product Information</h1>
 <table class="table">
-  <thead class="thead-light">
+  <thead class="">
     <tr>
       <th scope="col">Pid</th>
       <th scope="col">Pname</th>
