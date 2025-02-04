@@ -1,4 +1,4 @@
-# Product Management System
+#  (ProdEase)Product Management System
 
 A Product Management System built using **Java JSP, Servlets, and Bootstrap** to manage product details efficiently. This project provides an intuitive interface to add, update, delete, and view products with ease.
 
